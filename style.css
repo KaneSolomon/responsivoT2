@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 
+/*Header*/
 
 header{
-    height: 20vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -39,10 +39,47 @@ header{
     text-transform: uppercase;
 }
 
+/*Main*/
+
+.containerImg{
+    display: flex;
+    background-color: yellow;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.imgDog{
+    width: 18vw;
+    height: 25vh;
+}
+
+.boxInfo{
+    height: 40vh;
+    /* border: solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*COMO EU UTILIZEI O FLEX DIRECTION: COLUMN; O ALING ITEMS VAI TRABALHAR NA HORIZONTAL*/
+    justify-content: center; /*COMO EU UTILIZEI O FLEX DIRECTION: COLUMN; O JUSTIFY-CONTENT: CENTER; VAI TRABALHAR NA VERTICAL*/
+}
+
+button{
+    width: 5vw;
+    height: 5vh;
+    background-color: orange;
+    font-size: 1.2rem;
+    border-radius: 10%;
+}
+
+/*RESPONSIVO  @MEDIA */
+
+
+/*----Header----*/
 
 /* WATCH - (max-width: 200px) */
 
 @media (min-width: 150px) and (max-width: 200px) {
+
+
 
 header, .list{
         display: flex;
@@ -52,31 +89,327 @@ header, .list{
         align-items: center;
     }
     .logoHeader{
-        width: 50vw;
+        width: 70vw;
     }
 
     .itemList{
         font-size: 15px;
     }
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .containerImg{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .boxInfo{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+.imgDog{
+    width: 70vw;
+    height: 20vh;
+}
+
+button{
+    width: 30vw;
+    height: 5vh;
+    background-color: orange;
+    font-size: 1.2rem;
+    border-radius: 10%;
+}
+
 }
 
 /* MOBILE - (min-width: 201px) and (max-width: 500px) */
 
 @media (min-width: 201px) and (max-width: 500px) {
-
-
+    header{
+        height: 30vh;
+    }
+    
     header, .list{
         display: flex;
         flex-direction: column;
         background-color: blue;
         color: white;
         align-items: center;
+        justify-content: center;
     }
 
     .logoHeader{
-        width: 20vw;
+        width: 40vw;
     }
+
+    .containerImg{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .boxInfo{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+.imgDog{
+    width: 90vw;
+    height: 25vh;
+}
+
+button{
+    width: 30vw;
+    height: 5vh;
+    background-color: orange;
+    font-size: 1.2rem;
+    border-radius: 10%;
+}
+
+
+}
+
+/* TABLET - (min-width: 501px) and (max-width: 900px) */
+@media (min-width: 501px) and (max-width: 900px){
+    header{
+        height: 20vh;
+background-color: aqua;
+display: flex;
+    } 
+    .navegation{
+        width: 60vw;
+        /* border: solid orange; */
+    }
+    
+    .list{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        /* background-color: green; */
+        color: red;
+        align-items: center;
+    }
+
+    .logoHeader{
+        width: 15vw;
+    }
+
+    .itemList{
+        font-size: 0.8rem;
+    }
+
+/*Main*/
+
+.containerImg{
+    display: flex;
+    background-color: yellow;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imgDog{
+    width: 250px;
+    
+}
+
+.boxInfo{
+    height: 40vh;
+    /* border: solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*COMO EU UTILIZEI O FLEX DIRECTION: COLUMN; O ALING ITEMS VAI TRABALHAR NA HORIZONTAL*/
+    justify-content: center; /*COMO EU UTILIZEI O FLEX DIRECTION: COLUMN; O JUSTIFY-CONTENT: CENTER; VAI TRABALHAR NA VERTICAL*/
+}
+
+button{
+    width: 20vw;
+    height: 5vh;
+    background-color: lime;
+    font-size: 1.2rem;
+    border-radius: 10%;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+}
+
+
+/* LAPTOP - (min-width: 901px) and (max-width: 1500px) */
+
+@media(min-width: 901px) and (max-width: 1500px){
+header{
+    background-color: violet;
+    height: 40vh;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.itemList{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.logoHeader{
+    width: 20vw;
+}
+
+/*Main*/
+
+.containerImg{
+    display: flex;
+    background-color: yellow;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imgDog{
+    width: 250px;
+    
+}
+
+.boxInfo{
+    height: 40vh;
+    /* border: solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*COMO EU UTILIZEI O FLEX DIRECTION: COLUMN; O ALING ITEMS VAI TRABALHAR NA HORIZONTAL*/
+    justify-content: center; /*COMO EU UTILIZEI O FLEX DIRECTION: COLUMN; O JUSTIFY-CONTENT: CENTER; VAI TRABALHAR NA VERTICAL*/
+}
+
+button{
+    width: 20vw;
+    height: 5vh;
+    background-color: pink;
+    font-size: 1.2rem;
+    border-radius: 10%;
+}
+
+p{
+    font-size: 1.5rem;
+}
 
 
 
 }
+
+/* DESKTOP - (min-width: 1501px) and (max-width: 1800px) */
+
+@media(min-width: 1501px) and (max-width: 1800px){
+    header{
+        background-color: pink;
+        height: 40vh;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .itemList{
+        font-size:2rem;
+        color: black;
+    }
+    
+    .logoHeader{
+        width: 20vw;
+    }
+
+/*Main*/
+
+.containerImg{
+    display: flex;
+    background-color: yellow;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imgDog{
+    width: 250px;
+    
+}
+
+.boxInfo{
+    height: 60vh;
+    border: solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*COMO EU UTILIZEI O FLEX DIRECTION: COLUMN; O ALING ITEMS VAI TRABALHAR NA HORIZONTAL*/
+    justify-content: center; /*COMO EU UTILIZEI O FLEX DIRECTION: COLUMN; O JUSTIFY-CONTENT: CENTER; VAI TRABALHAR NA VERTICAL*/
+}
+
+    p{
+        font-size: 3rem;
+    }
+
+    button{
+        width: 8vw;
+        height: 7vh;
+        font-size: 2rem;
+    }
+    
+    }
+
+    /* Tela Ampla - (min-width: 1801px) */
+    @media(min-width: 1801px) {
+        header{
+        background-color: #1C1C1C;
+        height: 50vh;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .itemList{
+        font-size: 2rem;
+        color: white;
+    }
+    
+    .logoHeader{
+        width: 20vw;
+    }
+
+    /*Main*/
+
+.containerImg{
+    display: flex;
+    background-color: yellow;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imgDog{
+    width: 250px;
+    
+}
+
+.boxInfo{
+    height: 60vh;
+    border: solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*COMO EU UTILIZEI O FLEX DIRECTION: COLUMN; O ALING ITEMS VAI TRABALHAR NA HORIZONTAL*/
+    justify-content: center; /*COMO EU UTILIZEI O FLEX DIRECTION: COLUMN; O JUSTIFY-CONTENT: CENTER; VAI TRABALHAR NA VERTICAL*/
+}
+
+    p{
+        font-size: 3rem;
+    }
+
+    button{
+        width: 8vw;
+        height: 7vh;
+        font-size: 2rem;
+    }
+    
+    }
